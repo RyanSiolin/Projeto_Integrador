@@ -46,4 +46,4 @@ O sistema foi projetado para atender perfis distintos com dores financeiras espe
 | **Artur Machado Máximo** | SM (Scrum Master) | [`art-maximo`](https://github.com/art-maximo) |
 | **Felipe Josué Rodrigues Ribeiro** | Arquiteto (Dev Team) | [`FelipeCalvo19`](https://github.com/FelipeCalvo19) |
 | **Lucas Oliveira de Carvalho Mendes** | AD/DBA (Admin. de Dados) | [`lucasocm3021`](https://github.com/lucasocm3021) |
-| **Ryan Alexandre Cavalcante Siolin** | PO (Product Owner) | - |
+| **Ryan Alexandre Cavalcante Siolin** | PO (Product Owner) | [`RyanSiolin`](https://github.com/RyanSiolin) |
