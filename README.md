@@ -42,7 +42,7 @@ O sistema foi projetado para atender perfis distintos com dores financeiras espe
 ## 👥 Equipe e Funções
 | Membro | Função | GitHub |
 | :--- | :--- | :--- |
-| **Arthur Prados Piana** | Dev Team | - |
+| **Arthur Prados Piana** | Dev Team | [`arthurpph`](https://github.com/arthurpph) |
 | **Artur Machado Máximo** | SM (Scrum Master) | [`art-maximo`](https://github.com/art-maximo) |
 | **Felipe Josué Rodrigues Ribeiro** | Arquiteto (Dev Team) | [`FelipeCalvo19`](https://github.com/FelipeCalvo19) |
 | **Lucas Oliveira de Carvalho Mendes** | AD/DBA (Admin. de Dados) | [`lucasocm3021`](https://github.com/lucasocm3021) |
