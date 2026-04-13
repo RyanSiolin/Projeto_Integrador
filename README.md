@@ -38,6 +38,12 @@ O sistema foi projetado para atender perfis distintos com dores financeiras espe
 * **Volume de Dados:** Quantidade de registros de receitas e despesas inseridos.
 * **Interatividade:** Taxa de cliques em alertas e interação com os gráficos.
 * **Impacto Educativo:** Acessos aos conteúdos recomendados através do sistema.
+  
+## ⚙️ Gestão do Projeto
+Para a gestão ágil deste projeto, utilizamos o **Trello** seguindo a metodologia **Scrum/Kanban**. 
+Você pode acompanhar o andamento das tarefas e o nosso Backlog através do link abaixo:
+
+> [Clique aqui para acessar o Quadro de Gestão no Trello](https://trello.com/invite/b/69dce36e74cd4aa50dd4da73/ATTI9eb0e9a82df7ce8bc9827c5da8a208426F998467/projetor-integrador-i))
 
 ## 👥 Equipe e Funções
 | Membro | Função | GitHub |
