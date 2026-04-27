@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Transações – FinControl</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <span>FinControl</span>
+  <span>Ryan Siolin</span>
+</div>
+
+<div class="layout">
+  <div class="sidebar">
+    <ul>
+      <li><a href="3-dashboard.html">Dashboard</a></li>
+      <li><a href="4-lancamento.html">Lançamentos</a></li>
+      <li class="active">Transações</li>
+      <li><a href="6-relatorios.html">Relatórios</a></li>
+      <li><a href="7-alertas.html">Alertas</a></li>
+      <li><a href="8-educativo.html">Educação</a></li>
+    </ul>
+  </div>
+  <div class="content">
+
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+      <strong>Transações</strong>
+      <a href="4-lancamento.html"><button class="btn" style="font-size: 12px;">+ Novo Lançamento</button></a>
+    </div>
+
+    <!-- Filtros -->
+    <div class="box">
+      <div class="row" style="margin: 0;">
+        <div class="col"><label>Período</label><select><option>Abril 2025</option></select></div>
+        <div class="col"><label>Tipo</label><select><option>Todos</option></select></div>
+        <div class="col"><label>Categoria</label><select><option>Todas</option></select></div>
+        <div class="col"><label>Buscar</label><input type="text" placeholder="Pesquisar..." /></div>
+        <div style="align-self: flex-end;"><button class="btn" style="font-size: 12px;">Filtrar</button></div>
+      </div>
+    </div>
+
+    <div class="box">
+      <table>
+        <tr><th>Data</th><th>Descrição</th><th>Categoria</th><th>Tipo</th><th>Valor</th><th>Ações</th></tr>
+        <tr><td>25/04</td><td>Salário</td><td>Emprego</td><td>Entrada</td><td>+R$ 4.200,00</td><td>Editar | Excluir</td></tr>
+        <tr><td>24/04</td><td>Aluguel</td><td>Moradia</td><td>Saída</td><td>−R$ 900,00</td><td>Editar | Excluir</td></tr>
+        <tr><td>23/04</td><td>Mercado</td><td>Alimentação</td><td>Saída</td><td>−R$ 340,00</td><td>Editar | Excluir</td></tr>
+        <tr><td>22/04</td><td>Freela Design</td><td>Renda Extra</td><td>Entrada</td><td>+R$ 650,00</td><td>Editar | Excluir</td></tr>
+        <tr><td>21/04</td><td>Netflix</td><td>Lazer</td><td>Saída</td><td>−R$ 39,90</td><td>Editar | Excluir</td></tr>
+      </table>
+      <div style="display: flex; justify-content: space-between; font-size: 12px; margin-top: 10px; color: #777;">
+        <span>Mostrando 5 de 38 registros</span>
+        <div>
+          <button class="btn ghost" style="font-size: 11px;">← Anterior</button>
+          <button class="btn" style="font-size: 11px;">Próximo →</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

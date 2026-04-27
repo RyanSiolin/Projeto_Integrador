@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Alertas – FinControl</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <span>FinControl</span>
+  <span>Ryan Siolin</span>
+</div>
+
+<div class="layout">
+  <div class="sidebar">
+    <ul>
+      <li><a href="3-dashboard.html">Dashboard</a></li>
+      <li><a href="4-lancamento.html">Lançamentos</a></li>
+      <li><a href="5-transacoes.html">Transações</a></li>
+      <li><a href="6-relatorios.html">Relatórios</a></li>
+      <li class="active">Alertas</li>
+      <li><a href="8-educativo.html">Educação</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <strong style="display: block; margin-bottom: 12px;">Alertas e Limites</strong>
+
+    <div style="margin-bottom: 16px;">
+      <div style="font-size: 12px; font-weight: bold; margin-bottom: 8px;">Alertas Ativos</div>
+      <div class="alert"><strong>Alimentação:</strong> 92% do limite atingido (R$ 920 / R$ 1.000)</div>
+      <div class="alert"><strong>Lazer:</strong> 74% do limite atingido (R$ 296 / R$ 400)</div>
+      <div class="alert"><strong>Moradia:</strong> Dentro do limite — R$ 900 / R$ 1.200 (75%)</div>
+    </div>
+
+    <div class="box">
+      <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+        <div style="font-size: 12px; font-weight: bold;">Limites por Categoria</div>
+        <button class="btn" style="font-size: 11px;">+ Novo Limite</button>
+      </div>
+      <table>
+        <tr><th>Categoria</th><th>Limite</th><th>Gasto</th><th>Progresso</th><th>Ações</th></tr>
+        <tr>
+          <td>Alimentação</td><td>R$ 1.000</td><td>R$ 920</td>
+          <td><div class="progress" style="width: 120px;"><div style="width: 92%;"></div></div></td>
+          <td>Editar</td>
+        </tr>
+        <tr>
+          <td>Moradia</td><td>R$ 1.200</td><td>R$ 900</td>
+          <td><div class="progress" style="width: 120px;"><div style="width: 75%;"></div></div></td>
+          <td>Editar</td>
+        </tr>
+        <tr>
+          <td>Lazer</td><td>R$ 400</td><td>R$ 296</td>
+          <td><div class="progress" style="width: 120px;"><div style="width: 74%;"></div></div></td>
+          <td>Editar</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

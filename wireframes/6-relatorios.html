@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Relatórios – FinControl</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <span>FinControl</span>
+  <span>Ryan Siolin</span>
+</div>
+
+<div class="layout">
+  <div class="sidebar">
+    <ul>
+      <li><a href="3-dashboard.html">Dashboard</a></li>
+      <li><a href="4-lancamento.html">Lançamentos</a></li>
+      <li><a href="5-transacoes.html">Transações</a></li>
+      <li class="active">Relatórios</li>
+      <li><a href="7-alertas.html">Alertas</a></li>
+      <li><a href="8-educativo.html">Educação</a></li>
+    </ul>
+  </div>
+  <div class="content">
+
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+      <strong>Relatórios</strong>
+      <div style="display: flex; gap: 8px;">
+        <select style="font-size: 12px; padding: 6px;"><option>Abril 2025</option></select>
+        <button class="btn outline" style="font-size: 12px;">Exportar</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col ph" style="height: 150px; flex: 2;">Gráfico de barras — Receitas vs Despesas (6 meses)</div>
+      <div class="col ph" style="height: 150px;">Gráfico de pizza — Categorias</div>
+    </div>
+
+    <div class="row">
+      <div class="col box">
+        <div style="font-size: 12px; font-weight: bold; margin-bottom: 8px;">Resumo do Mês</div>
+        <table>
+          <tr><th>Indicador</th><th>Valor</th></tr>
+          <tr><td>Total Receitas</td><td>R$ 4.850,00</td></tr>
+          <tr><td>Total Despesas</td><td>R$ 2.360,00</td></tr>
+          <tr><td>Saldo Final</td><td><strong>R$ 2.490,00</strong></td></tr>
+          <tr><td>Taxa de Poupança</td><td>51,3%</td></tr>
+        </table>
+      </div>
+      <div class="col ph" style="height: 160px;">Gráfico de linha — Evolução do saldo</div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

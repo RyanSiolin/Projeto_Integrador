@@ -1,0 +1,56 @@
+[
+  {
+    "_id": "ObjectId('usr_001')",
+    "nome": "Ryan Siolin",
+    "email": "ryan@gmail.com",
+    "senha_hash": "$2b$10$...",
+    "data_cadastro": "2025-01-10T08:00:00Z",
+    "categorias": [
+      {
+        "id_categoria": "cat_01",
+        "nome": "Alimentação",
+        "tipo": "despesa"
+      },
+      {
+        "id_categoria": "cat_02",
+        "nome": "Salário",
+        "tipo": "receita"
+      },
+      {
+        "id_categoria": "cat_03",
+        "nome": "Transporte",
+        "tipo": "despesa"
+      }
+    ],
+    "metas": [
+      {
+        "id_meta": "meta_01",
+        "descricao": "Reserva de emergência",
+        "valor_limite": 5000.00,
+        "data_inicio": "2025-01-01",
+        "data_fim": "2025-06-30"
+      },
+      {
+        "id_meta": "meta_02",
+        "descricao": "Viagem de férias",
+        "valor_limite": 3000.00,
+        "data_inicio": "2025-03-01",
+        "data_fim": "2025-12-31"
+      }
+    ],
+    "alertas": [
+      {
+        "id_alerta": "alrt_01",
+        "mensagem": "Você atingiu 80% do limite em Alimentação",
+        "data": "2025-04-20T09:30:00Z",
+        "visualizado": false
+      },
+      {
+        "id_alerta": "alrt_02",
+        "mensagem": "Meta 'Reserva de emergência' está 60% concluída",
+        "data": "2025-04-18T11:00:00Z",
+        "visualizado": true
+      }
+    ]
+  }
+]

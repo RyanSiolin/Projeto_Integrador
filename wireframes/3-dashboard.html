@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard – FinControl</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <span>FinControl</span>
+  <span>Ryan Siolin</span>
+</div>
+
+<div class="layout">
+  <div class="sidebar">
+    <ul>
+      <li class="active">Dashboard</li>
+      <li><a href="4-lancamento.html">Lançamentos</a></li>
+      <li><a href="5-transacoes.html">Transações</a></li>
+      <li><a href="6-relatorios.html">Relatórios</a></li>
+      <li><a href="7-alertas.html">Alertas</a></li>
+      <li><a href="8-educativo.html">Educação</a></li>
+    </ul>
+  </div>
+  <div class="content">
+
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+      <strong>Visão Geral — Abril 2025</strong>
+      <a href="4-lancamento.html"><button class="btn" style="font-size: 12px;">+ Novo Lançamento</button></a>
+    </div>
+
+    <!-- Cards KPI -->
+    <div class="row">
+      <div class="col box">
+        <div style="font-size: 11px; color: #888;">SALDO ATUAL</div>
+        <div style="font-size: 20px; font-weight: bold;">R$ 1.840,00</div>
+      </div>
+      <div class="col box">
+        <div style="font-size: 11px; color: #888;">RECEITAS</div>
+        <div style="font-size: 20px; font-weight: bold;">R$ 4.200,00</div>
+      </div>
+      <div class="col box">
+        <div style="font-size: 11px; color: #888;">DESPESAS</div>
+        <div style="font-size: 20px; font-weight: bold;">R$ 2.360,00</div>
+      </div>
+      <div class="col box">
+        <div style="font-size: 11px; color: #888;">META POUPANÇA</div>
+        <div style="font-size: 20px; font-weight: bold;">R$ 500,00</div>
+        <div class="progress" style="margin-top: 6px;"><div style="width: 65%;"></div></div>
+        <div style="font-size: 11px; color: #888; margin-top: 4px;">65%</div>
+      </div>
+    </div>
+
+    <!-- Gráficos -->
+    <div class="row">
+      <div class="col ph" style="height: 130px; flex: 2;">Gráfico de barras — Receitas vs Despesas (6 meses)</div>
+      <div class="col ph" style="height: 130px;">Gráfico de pizza — Categorias</div>
+    </div>
+
+    <!-- Tabela -->
+    <div class="box">
+      <div style="font-size: 12px; font-weight: bold; margin-bottom: 8px;">Últimas Transações</div>
+      <table>
+        <tr><th>Data</th><th>Descrição</th><th>Categoria</th><th>Tipo</th><th>Valor</th></tr>
+        <tr><td>25/04</td><td>Salário</td><td>Emprego</td><td>Entrada</td><td>+R$ 4.200,00</td></tr>
+        <tr><td>24/04</td><td>Aluguel</td><td>Moradia</td><td>Saída</td><td>−R$ 900,00</td></tr>
+        <tr><td>23/04</td><td>Supermercado</td><td>Alimentação</td><td>Saída</td><td>−R$ 340,00</td></tr>
+      </table>
+      <div style="text-align: right; font-size: 12px; margin-top: 8px;">
+        <a href="5-transacoes.html">Ver todas →</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lançamento – FinControl</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <span>FinControl</span>
+  <span>Ryan Siolin</span>
+</div>
+
+<div class="layout">
+  <div class="sidebar">
+    <ul>
+      <li><a href="3-dashboard.html">Dashboard</a></li>
+      <li class="active">Lançamentos</li>
+      <li><a href="5-transacoes.html">Transações</a></li>
+      <li><a href="6-relatorios.html">Relatórios</a></li>
+      <li><a href="7-alertas.html">Alertas</a></li>
+      <li><a href="8-educativo.html">Educação</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <strong style="display: block; margin-bottom: 16px;">Novo Lançamento</strong>
+    <div class="box" style="max-width: 500px;">
+      <div style="margin-bottom: 12px;">
+        <label>Tipo *</label>
+        <div style="display: flex; gap: 16px;">
+          <label><input type="radio" name="tipo" checked /> Receita</label>
+          <label><input type="radio" name="tipo" /> Despesa</label>
+        </div>
+      </div>
+      <div style="margin-bottom: 12px;">
+        <label>Descrição *</label>
+        <input type="text" placeholder="Ex: Salário Mensal" />
+      </div>
+      <div class="row">
+        <div class="col">
+          <label>Valor (R$) *</label>
+          <input type="text" placeholder="0,00" />
+        </div>
+        <div class="col">
+          <label>Data *</label>
+          <input type="text" placeholder="dd/mm/aaaa" />
+        </div>
+      </div>
+      <div style="margin-bottom: 12px; margin-top: 12px;">
+        <label>Categoria *</label>
+        <select>
+          <option>Selecione...</option>
+          <option>Moradia</option>
+          <option>Alimentação</option>
+          <option>Transporte</option>
+          <option>Lazer</option>
+          <option>Saúde</option>
+        </select>
+      </div>
+      <div style="margin-bottom: 16px;">
+        <label>Observações</label>
+        <textarea placeholder="Opcional..."></textarea>
+      </div>
+      <div style="display: flex; gap: 8px; justify-content: flex-end;">
+        <button class="btn ghost"><a href="3-dashboard.html">Cancelar</a></button>
+        <button class="btn">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

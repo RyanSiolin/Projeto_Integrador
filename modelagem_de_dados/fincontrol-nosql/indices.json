@@ -1,0 +1,29 @@
+{
+  "indices": [
+    {
+      "collection": "transacoes",
+      "index": { "id_usuario": 1, "data": -1 },
+      "opcoes": {}
+    },
+    {
+      "collection": "transacoes",
+      "index": { "id_usuario": 1, "tipo": 1 },
+      "opcoes": {}
+    },
+    {
+      "collection": "transacoes",
+      "index": { "id_usuario": 1, "id_categoria": 1 },
+      "opcoes": {}
+    },
+    {
+      "collection": "users",
+      "index": { "email": 1 },
+      "opcoes": { "unique": true }
+    },
+    {
+      "collection": "conteudos_educativos",
+      "index": { "categoria": 1 },
+      "opcoes": {}
+    }
+  ]
+}

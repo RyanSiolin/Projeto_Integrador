@@ -1,0 +1,32 @@
+[
+  {
+    "_id": "ObjectId('txn_001')",
+    "id_usuario": "ObjectId('usr_001')",
+    "descricao": "Mercado Semanal",
+    "valor": 350.00,
+    "data": "2025-04-22T14:00:00Z",
+    "tipo": "despesa",
+    "id_categoria": "cat_01",
+    "nome_categoria": "Alimentação"
+  },
+  {
+    "_id": "ObjectId('txn_002')",
+    "id_usuario": "ObjectId('usr_001')",
+    "descricao": "Salário Abril",
+    "valor": 5000.00,
+    "data": "2025-04-05T08:00:00Z",
+    "tipo": "receita",
+    "id_categoria": "cat_02",
+    "nome_categoria": "Salário"
+  },
+  {
+    "_id": "ObjectId('txn_003')",
+    "id_usuario": "ObjectId('usr_001')",
+    "descricao": "Uber",
+    "valor": 45.90,
+    "data": "2025-04-21T19:00:00Z",
+    "tipo": "despesa",
+    "id_categoria": "cat_03",
+    "nome_categoria": "Transporte"
+  }
+]

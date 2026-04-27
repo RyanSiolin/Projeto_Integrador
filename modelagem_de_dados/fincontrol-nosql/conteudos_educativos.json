@@ -1,0 +1,23 @@
+[
+  {
+    "_id": "ObjectId('edu_001')",
+    "titulo": "Como montar uma reserva de emergência",
+    "link": "https://a_ser_decidido.com/reserva",
+    "fonte": "Blog FinControl",
+    "categoria": "investimentos"
+  },
+  {
+    "_id": "ObjectId('edu_002')",
+    "titulo": "Entendendo o orçamento pessoal",
+    "link": "https://a_ser_decidido.com/orcamento",
+    "fonte": "Blog FinControl",
+    "categoria": "planejamento"
+  },
+  {
+    "_id": "ObjectId('edu_003')",
+    "titulo": "Como sair das dívidas em 6 meses",
+    "link": "https://a_ser_decidido.com/dividas",
+    "fonte": "Blog FinControl",
+    "categoria": "dividas"
+  }
+]
