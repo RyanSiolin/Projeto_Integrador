@@ -1,0 +1,109 @@
+﻿modalidade;porte;carteira_ativa_total;inadimplida_total;taxa_inadimplencia_pct
+PF - Cartão de crédito;PF - Acima de 20 salários mínimos            ;4917621646365;146828342712;2.99
+PF - Cartão de crédito;PF - Até 1 salário mínimo                    ;5944885526180;821403878447;13.82
+PF - Cartão de crédito;PF - Indisponível                            ;1763524234313;185959613587;10.54
+PF - Cartão de crédito;PF - Mais de 1 a 2 salários mínimos          ;10764500182049;1342592783593;12.47
+PF - Cartão de crédito;PF - Mais de 10 a 20 salários mínimos        ;7746034428542;319913155286;4.13
+PF - Cartão de crédito;PF - Mais de 2 a 3 salários mínimos          ;6845553006574;670006013869;9.79
+PF - Cartão de crédito;PF - Mais de 3 a 5 salários mínimos          ;8294526160738;773033833563;9.32
+PF - Cartão de crédito;PF - Mais de 5 a 10 salários mínimos         ;10242706160099;651610903305;6.36
+PF - Cartão de crédito;PF - Sem rendimento                          ;274587394276;59720608032;21.75
+PF - Empréstimo com consignação em folha;PF - Acima de 20 salários mínimos            ;2056201906277;36400389845;1.77
+PF - Empréstimo com consignação em folha;PF - Até 1 salário mínimo                    ;9902955268716;322999959085;3.26
+PF - Empréstimo com consignação em folha;PF - Indisponível                            ;2507620678608;59536888287;2.37
+PF - Empréstimo com consignação em folha;PF - Mais de 1 a 2 salários mínimos          ;12206135199446;370903846573;3.04
+PF - Empréstimo com consignação em folha;PF - Mais de 10 a 20 salários mínimos        ;6381573724638;118293022678;1.85
+PF - Empréstimo com consignação em folha;PF - Mais de 2 a 3 salários mínimos          ;8273167060807;258932901799;3.13
+PF - Empréstimo com consignação em folha;PF - Mais de 3 a 5 salários mínimos          ;10528066341397;299942439992;2.85
+PF - Empréstimo com consignação em folha;PF - Mais de 5 a 10 salários mínimos         ;10549744695303;267039108359;2.53
+PF - Empréstimo com consignação em folha;PF - Sem rendimento                          ;78366653861;60007471314;76.57
+PF - Empréstimo sem consignação em folha;PF - Acima de 20 salários mínimos            ;6041941054516;284993990642;4.72
+PF - Empréstimo sem consignação em folha;PF - Até 1 salário mínimo                    ;3264710784002;418477658617;12.82
+PF - Empréstimo sem consignação em folha;PF - Indisponível                            ;908855910613;85243421425;9.38
+PF - Empréstimo sem consignação em folha;PF - Mais de 1 a 2 salários mínimos          ;5800082924417;653270884930;11.26
+PF - Empréstimo sem consignação em folha;PF - Mais de 10 a 20 salários mínimos        ;3754497639780;227928022717;6.07
+PF - Empréstimo sem consignação em folha;PF - Mais de 2 a 3 salários mínimos          ;3338669277360;337770006961;10.12
+PF - Empréstimo sem consignação em folha;PF - Mais de 3 a 5 salários mínimos          ;3913610519789;378449780191;9.67
+PF - Empréstimo sem consignação em folha;PF - Mais de 5 a 10 salários mínimos         ;4644875447512;364118727794;7.84
+PF - Empréstimo sem consignação em folha;PF - Sem rendimento                          ;33449813030;8871551750;26.52
+PF - Habitacional;PF - Acima de 20 salários mínimos            ;10118217995358;80960822384;0.8
+PF - Habitacional;PF - Até 1 salário mínimo                    ;8056604682018;154494767404;1.92
+PF - Habitacional;PF - Indisponível                            ;1012162562618;6355194207;0.63
+PF - Habitacional;PF - Mais de 1 a 2 salários mínimos          ;23621835635236;476364493979;2.02
+PF - Habitacional;PF - Mais de 10 a 20 salários mínimos        ;15383867190753;87369171945;0.57
+PF - Habitacional;PF - Mais de 2 a 3 salários mínimos          ;14979482720085;206080003266;1.38
+PF - Habitacional;PF - Mais de 3 a 5 salários mínimos          ;16952099646893;177709304774;1.05
+PF - Habitacional;PF - Mais de 5 a 10 salários mínimos         ;20095371903020;134776702750;0.67
+PF - Habitacional;PF - Sem rendimento                          ;9881769363;1406995751;14.24
+PF - Outros créditos;PF - Acima de 20 salários mínimos            ;7158413944964;373919209979;5.22
+PF - Outros créditos;PF - Até 1 salário mínimo                    ;1410798699938;216246436019;15.33
+PF - Outros créditos;PF - Indisponível                            ;563859641950;72712302943;12.9
+PF - Outros créditos;PF - Mais de 1 a 2 salários mínimos          ;2593708000666;458737535183;17.69
+PF - Outros créditos;PF - Mais de 10 a 20 salários mínimos        ;2427173048038;237576821068;9.79
+PF - Outros créditos;PF - Mais de 2 a 3 salários mínimos          ;2031104823063;289015657091;14.23
+PF - Outros créditos;PF - Mais de 3 a 5 salários mínimos          ;2608081977650;381610370291;14.63
+PF - Outros créditos;PF - Mais de 5 a 10 salários mínimos         ;3571793906302;414740833442;11.61
+PF - Outros créditos;PF - Sem rendimento                          ;58101019503;9385471275;16.15
+PF - Rural e agroindustrial;PF - Acima de 20 salários mínimos            ;37675238556695;1109485594803;2.94
+PF - Rural e agroindustrial;PF - Até 1 salário mínimo                    ;2517944162519;123434432163;4.9
+PF - Rural e agroindustrial;PF - Indisponível                            ;196359910947;10222078612;5.21
+PF - Rural e agroindustrial;PF - Mais de 1 a 2 salários mínimos          ;2358737515963;126736471901;5.37
+PF - Rural e agroindustrial;PF - Mais de 10 a 20 salários mínimos        ;6855268061606;185517703052;2.71
+PF - Rural e agroindustrial;PF - Mais de 2 a 3 salários mínimos          ;1490090414120;69982554154;4.7
+PF - Rural e agroindustrial;PF - Mais de 3 a 5 salários mínimos          ;3407737466030;137902471001;4.05
+PF - Rural e agroindustrial;PF - Mais de 5 a 10 salários mínimos         ;5024160768967;165609094447;3.3
+PF - Rural e agroindustrial;PF - Sem rendimento                          ;44963364860;867071037;1.93
+PF - Veículos;PF - Acima de 20 salários mínimos            ;2279066409618;75106256498;3.3
+PF - Veículos;PF - Até 1 salário mínimo                    ;1803542301008;105830316262;5.87
+PF - Veículos;PF - Indisponível                            ;1642282733051;133509528724;8.13
+PF - Veículos;PF - Mais de 1 a 2 salários mínimos          ;5892360863420;452145877724;7.67
+PF - Veículos;PF - Mais de 10 a 20 salários mínimos        ;3348691710753;107935449865;3.22
+PF - Veículos;PF - Mais de 2 a 3 salários mínimos          ;4395920432194;263928339534;6.0
+PF - Veículos;PF - Mais de 3 a 5 salários mínimos          ;6373801083671;351582994689;5.52
+PF - Veículos;PF - Mais de 5 a 10 salários mínimos         ;7708810361495;314368678834;4.08
+PF - Veículos;PF - Sem rendimento                          ;41013935940;1426925947;3.48
+PJ - Capital de giro;PJ - Grande                                  ;16574616918484;147077945478;0.89
+PJ - Capital de giro;PJ - Indisponível                            ;1087711011168;53086766539;4.88
+PJ - Capital de giro;PJ - Micro                                   ;4624591213996;280045278578;6.06
+PJ - Capital de giro;PJ - Médio                                   ;24804038889369;1008633720079;4.07
+PJ - Capital de giro;PJ - Pequeno                                 ;18516949340299;1333951997963;7.2
+PJ - Cheque especial e conta garantida;PJ - Grande                                  ;605813384026;4914768407;0.81
+PJ - Cheque especial e conta garantida;PJ - Indisponível                            ;117269026871;5767631452;4.92
+PJ - Cheque especial e conta garantida;PJ - Micro                                   ;366021369480;43434066880;11.87
+PJ - Cheque especial e conta garantida;PJ - Médio                                   ;2999566378900;98176119892;3.27
+PJ - Cheque especial e conta garantida;PJ - Pequeno                                 ;1642320382136;165878739589;10.1
+PJ - Comércio exterior;PJ - Grande                                  ;19736010520827;92189658365;0.47
+PJ - Comércio exterior;PJ - Indisponível                            ;474843807258;13583600856;2.86
+PJ - Comércio exterior;PJ - Micro                                   ;64069386381;1446451485;2.26
+PJ - Comércio exterior;PJ - Médio                                   ;3088592389477;38416003689;1.24
+PJ - Comércio exterior;PJ - Pequeno                                 ;232862751624;4840665620;2.08
+PJ - Financiamento de infraestrutura/desenvolvimento/projeto e outros créditos;PJ - Grande                                  ;42285706961267;11114666773;0.03
+PJ - Financiamento de infraestrutura/desenvolvimento/projeto e outros créditos;PJ - Indisponível                            ;961314360852;6780552562;0.71
+PJ - Financiamento de infraestrutura/desenvolvimento/projeto e outros créditos;PJ - Micro                                   ;680412823643;23079978639;3.39
+PJ - Financiamento de infraestrutura/desenvolvimento/projeto e outros créditos;PJ - Médio                                   ;8319468907719;80204445587;0.96
+PJ - Financiamento de infraestrutura/desenvolvimento/projeto e outros créditos;PJ - Pequeno                                 ;2339688084757;60111413798;2.57
+PJ - Habitacional;PJ - Grande                                  ;1443058700759;5048083607;0.35
+PJ - Habitacional;PJ - Indisponível                            ;595840224409;13253909665;2.22
+PJ - Habitacional;PJ - Micro                                   ;372150914567;4442505238;1.19
+PJ - Habitacional;PJ - Médio                                   ;1917629119756;21597566145;1.13
+PJ - Habitacional;PJ - Pequeno                                 ;527876802647;6939786939;1.31
+PJ - Investimento;PJ - Grande                                  ;8943965981106;15471884169;0.17
+PJ - Investimento;PJ - Indisponível                            ;923888284559;13559447341;1.47
+PJ - Investimento;PJ - Micro                                   ;1643956104422;85483321410;5.2
+PJ - Investimento;PJ - Médio                                   ;9913118308251;275990258572;2.78
+PJ - Investimento;PJ - Pequeno                                 ;6137223043663;298995252920;4.87
+PJ - Operações com recebíveis;PJ - Grande                                  ;10508040180236;11670788326;0.11
+PJ - Operações com recebíveis;PJ - Indisponível                            ;2714126039772;3450523069;0.13
+PJ - Operações com recebíveis;PJ - Micro                                   ;496657080418;6132116235;1.23
+PJ - Operações com recebíveis;PJ - Médio                                   ;3811963013263;59568745843;1.56
+PJ - Operações com recebíveis;PJ - Pequeno                                 ;1148850141636;45666116724;3.97
+PJ - Outros créditos;PJ - Grande                                  ;6520111037632;147820691590;2.27
+PJ - Outros créditos;PJ - Indisponível                            ;467517073703;67417672611;14.42
+PJ - Outros créditos;PJ - Micro                                   ;945574002842;168973268212;17.87
+PJ - Outros créditos;PJ - Médio                                   ;3990016779437;487173785919;12.21
+PJ - Outros créditos;PJ - Pequeno                                 ;4010839549801;790268675891;19.7
+PJ - Rural e agroindustrial;PJ - Grande                                  ;5736045408041;11211670591;0.2
+PJ - Rural e agroindustrial;PJ - Indisponível                            ;46206140250;50202958;0.11
+PJ - Rural e agroindustrial;PJ - Micro                                   ;39957359775;432573914;1.08
+PJ - Rural e agroindustrial;PJ - Médio                                   ;851766789302;14037392234;1.65
+PJ - Rural e agroindustrial;PJ - Pequeno                                 ;180467292784;2136861949;1.18
