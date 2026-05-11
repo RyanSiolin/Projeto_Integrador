@@ -1,9 +1,5 @@
 """
 ============================================================
-  SGEF — Sistema de Gestão e Educação Financeira
-  Script ETL Completo
-  Baseado na documentação técnica do projeto SGEF
-============================================================
   Módulos:
     01  extrair_dados()        — Extração & Ingestão
     02  tratar_limpar_dados()  — Inspeção & Limpeza
@@ -164,7 +160,7 @@ def tratar_limpar_forms(df_bruto: pd.DataFrame) -> pd.DataFrame:
         "atualmente_voce_se_encontra_em_situacao_de_inadimplencia_com_contas_ou_dividas_em_atraso": "esta_inadimplente",
         "quais_tipos_de_pendencias_financeira_voce_possui_atualmente_marque_todas_que_se_aplicam": "tipos_pendencias",
         "com_que_frequencia_voce_enfrenta_dificuldades_para_pagar_suas_contas_no_prazo": "freq_dificuldade_pagamento",
-        "voce_teria_interesse_em_usar_um_app_site_de_controle_financeiro_que_alem_de_organizar_seus_gastos_tambem_ofere": "interesse_app_sgef",
+        "voce_teria_interesse_em_usar_um_app_site_de_controle_financeiro_que_alem_de_organizar_seus_gastos_tambem_ofere": "interesse_app_fincontrol",
     }
     # Aplica apenas as colunas que existem no df
     mapa_valido = {k: v for k, v in mapa_colunas.items() if k in df.columns}
@@ -341,7 +337,7 @@ def transformar_dados(df_forms: pd.DataFrame, df_bcb: pd.DataFrame) -> dict:
         "fontes_informacao", "educ_financeira_escola", "sente_falta_educ",
         "acredita_ferramentas_digitais", "entende_conceitos_basicos",
         "temas_dificeis", "dificuldade_aprendizado", "formato_aprendizado",
-        "dashboard_ajudaria", "tipo_ajuda_util", "interesse_app_sgef",
+        "dashboard_ajudaria", "tipo_ajuda_util", "interesse_app_fincontrol",
     ]
     tabelas["tabela_educacao"] = _selecionar_colunas(df_forms, colunas_educacao)
     print(f"✅ tabela_educacao: {tabelas['tabela_educacao'].shape}")

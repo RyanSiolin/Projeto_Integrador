@@ -3,4 +3,4 @@ os.chdir('/content')
 # confirma os arquivos
 !ls *.csv
 
-!python sgef_etl.py
+!python ficontrol_etl.py
