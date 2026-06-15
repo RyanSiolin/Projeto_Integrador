@@ -96,11 +96,19 @@ dashboard/
 
 ## Sincronizar com Backend
 
+### Sincronização Automática (Padrão)
 1. Certifique-se que o servidor Flask está rodando
 2. Vá para a página **Configurações**
 3. Verifique se a URL do servidor está correta (`http://localhost:5000`)
-4. Clique em **Sincronizar**
-5. Os dados serão enviados para o backend e processados pelo ETL
+4. **Pronto!** A sincronização é automática:
+   - Sempre que você adicionar ou excluir uma transação, os dados são enviados para o backend
+   - Quando o dashboard abre, ele tenta carregar os dados do servidor
+   - Se o servidor estiver offline, o aplicativo continua funcionando com dados locais
+
+### Alterar URL do Servidor
+1. Vá para a página **Configurações**
+2. Altere o campo "URL do Servidor"
+3. A nova URL é salva automaticamente no navegador
 
 ## Tecnologias Utilizadas
 
