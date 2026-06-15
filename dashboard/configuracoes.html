@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Configurações – FinControl</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <h1>FinControl</h1>
+  <div class="user">
+    <span>Login</span>
+  </div>
+</div>
+
+<div class="layout">
+  <div class="sidebar">
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="lancamento.html">Lançamentos</a></li>
+      <li><a href="transacoes.html">Transações</a></li>
+      <li><a href="relatorios.html">Relatórios</a></li>
+      <li><a href="educativo.html">Educação</a></li>
+      <li><a href="configuracoes.html" class="active">Configurações</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <h2 style="margin-bottom: 1.5rem;">Configurações</h2>
+
+    <div class="chart-box" style="margin-bottom: 1.5rem;">
+      <h3 style="margin-bottom: 1rem;">🎯 Meta de Poupança</h3>
+      <div class="form-group">
+        <label for="metaPoupancaInput">Valor da Meta</label>
+        <input type="number" id="metaPoupancaInput" step="0.01" min="0" />
+      </div>
+      <button class="btn btn-primary" id="btnSalvarMeta">Salvar Meta</button>
+    </div>
+
+    <div class="chart-box" style="margin-bottom: 1.5rem;">
+      <h3 style="margin-bottom: 1rem;">📤 Exportar Dados</h3>
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <button class="btn btn-primary" id="btnExportarJSON">Exportar JSON</button>
+        <button class="btn btn-primary" id="btnExportarCSV">Exportar CSV</button>
+      </div>
+    </div>
+
+    <div class="chart-box" style="margin-bottom: 1.5rem;">
+      <h3 style="margin-bottom: 1rem;">📥 Importar Dados</h3>
+      <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+        <input type="file" id="inputImportar" accept=".json" />
+        <button class="btn btn-outline" id="btnImportar">Importar</button>
+      </div>
+      <p style="font-size: 0.875rem; color: #64748b; margin-top: 0.5rem;">
+        Importe um arquivo JSON exportado anteriormente para restaurar seus dados.
+      </p>
+    </div>
+
+    <div class="chart-box" style="margin-bottom: 1.5rem;">
+      <h3 style="margin-bottom: 1rem;">🔄 Integração com Backend</h3>
+      <div class="form-group" style="max-width: 400px;">
+        <label for="backendUrl">URL do Servidor</label>
+        <input type="text" id="backendUrl" value="http://localhost:5000" />
+      </div>
+      <p style="font-size: 0.875rem; color: #64748b; margin-top: 0.5rem;">
+        ⚡ Sincronização automática ativada! Dados são salvos no servidor sempre que você adicionar ou remover uma transação.
+      </p>
+    </div>
+
+    <div class="chart-box">
+      <h3 style="margin-bottom: 1rem;">⚠️ Reset</h3>
+      <button class="btn btn-outline" id="btnResetarDados">Resetar Dados</button>
+      <p style="font-size: 0.875rem; color: #64748b; margin-top: 0.5rem;">
+        Isso irá apagar todos os dados e restaurar os valores padrão.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
