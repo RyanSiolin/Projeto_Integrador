@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard – FinControl</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <h1>FinControl</h1>
+  <div class="user">
+    <span>Login</span>
+  </div>
+</div>
+
+<div class="layout">
+  <div class="sidebar">
+    <ul>
+      <li><a href="dashboard.html" class="active">Dashboard</a></li>
+      <li><a href="lancamento.html">Lançamentos</a></li>
+      <li><a href="transacoes.html">Transações</a></li>
+      <li><a href="relatorios.html">Relatórios</a></li>
+      <li><a href="educativo.html">Educação</a></li>
+      <li><a href="configuracoes.html">Configurações</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="header-content">
+      <h2>Visão Geral – <span id="mesAno"></span></h2>
+      <a href="lancamento.html"><button class="btn btn-primary">+ Novo Lançamento</button></a>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-label">SALDO ATUAL</div>
+        <div class="card-value" id="saldoAtual">R$ 0,00</div>
+      </div>
+      <div class="card">
+        <div class="card-label">RECEITAS</div>
+        <div class="card-value positive" id="totalReceitas">R$ 0,00</div>
+      </div>
+      <div class="card">
+        <div class="card-label">DESPESAS</div>
+        <div class="card-value negative" id="totalDespesas">R$ 0,00</div>
+      </div>
+      <div class="card">
+        <div class="card-label">META POUPANÇA</div>
+        <div class="card-value" id="metaPoupanca">R$ 500,00</div>
+        <div class="progress">
+          <div class="progress-bar" id="progressPoupanca" style="width: 0%"></div>
+        </div>
+        <div style="font-size: 0.875rem; color: #64748b; margin-top: 0.5rem;" id="percentualPoupanca">0%</div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="chart-box">
+        <div class="chart-title">Receitas vs Despesas (Últimos 6 Meses</div>
+        <canvas id="chartBar"></canvas>
+      </div>
+      <div class="chart-box">
+        <div class="chart-title">Despesas por Categoria</div>
+        <canvas id="chartPie"></canvas>
+      </div>
+    </div>
+
+    <div class="grid-1">
+      <div class="chart-box">
+        <div class="chart-title">Últimas Transações</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Descrição</th>
+              <th>Categoria</th>
+              <th>Tipo</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody id="tabelaUltimasTransacoes"></tbody>
+        </table>
+        <div style="text-align: right; margin-top: 0.75rem;">
+          <a href="transacoes.html" style="color: #4f46e5; text-decoration: none; font-size: 0.875rem;">Ver todas →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
