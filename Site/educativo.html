@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinControl - Educação Financeira</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+    .hero {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+    .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card-hover:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3" href="index.html">
+        <i class="bi bi-graph-up-arrow text-primary"></i> FinControl
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link fw-semibold" href="index.html#recursos">Recursos</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="dashboard.html">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold active" href="educativo.html">Educação</a></li>
+        </ul>
+        <a href="#" class="btn btn-outline-primary ms-3">Entrar</a>
+        <a href="#" class="btn btn-primary ms-2">Cadastrar</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero py-5">
+    <div class="container text-center py-5">
+      <h1 class="display-4 fw-bold mb-4">Educação Financeira para Todos</h1>
+      <p class="lead">Conteúdos práticos e acessíveis para você começar a controlar suas finanças</p>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light">
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card card-hover border-0 h-100">
+            <div class="card-body p-5">
+              <i class="bi bi-box-seam display-4 text-primary mb-4"></i>
+              <h4 class="fw-bold mb-3">Reserva de Emergência</h4>
+              <p class="text-muted mb-4">Saiba como criar uma reserva para proteger seu dinheiro em momentos de crise.</p>
+              <a href="#" class="btn btn-outline-primary">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-hover border-0 h-100">
+            <div class="card-body p-5">
+              <i class="bi bi-building display-4 text-success mb-4"></i>
+              <h4 class="fw-bold mb-3">Investimentos Básicos</h4>
+              <p class="text-muted mb-4">Conheça investimentos seguros como CDB, LCI, LCA e Tesouro Direto.</p>
+              <a href="#" class="btn btn-outline-success">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-hover border-0 h-100">
+            <div class="card-body p-5">
+              <i class="bi bi-wallet2 display-4 text-warning mb-4"></i>
+              <h4 class="fw-bold mb-3">Controle de Gastos</h4>
+              <p class="text-muted mb-4">Dicas práticas para organizar suas despesas e economizar dinheiro.</p>
+              <a href="#" class="btn btn-outline-warning">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-hover border-0 h-100">
+            <div class="card-body p-5">
+              <i class="bi bi-percent display-4 text-info mb-4"></i>
+              <h4 class="fw-bold mb-3">Juros Compostos</h4>
+              <p class="text-muted mb-4">Entenda o poder dos juros compostos e como usá-los ao seu favor.</p>
+              <a href="#" class="btn btn-outline-info">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-hover border-0 h-100">
+            <div class="card-body p-5">
+              <i class="bi bi-exclamation-triangle display-4 text-danger mb-4"></i>
+              <h4 class="fw-bold mb-3">Evitar Dívidas</h4>
+              <p class="text-muted mb-4">Aprenda estratégias para sair de dívidas e evitar voltar ao vermelho.</p>
+              <a href="#" class="btn btn-outline-danger">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-hover border-0 h-100">
+            <div class="card-body p-5">
+              <i class="bi bi-flag display-4 text-secondary mb-4"></i>
+              <h4 class="fw-bold mb-3">Metas Financeiras</h4>
+              <p class="text-muted mb-4">Como definir e alcançar suas metas financeiras de forma realista.</p>
+              <a href="#" class="btn btn-outline-secondary">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p class="mb-2">© 2026 FinControl - Projeto Integrador UniCEUB</p>
+      <p class="text-muted small">Desenvolvido para educação financeira</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

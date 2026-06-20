@@ -2,54 +2,100 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Relatórios – FinControl</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .navbar {
+      padding: 12px 24px;
+      border-bottom: 1px solid #e9ecef;
+    }
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .navbar-user {
+      color: #666;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .charts-container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    @media (max-width: 1024px) {
+      .charts-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<div class="topbar">
-  <span>FinControl</span>
-  <span>Ryan Siolin</span>
+<div class="navbar" style="display: flex; justify-content: space-between; align-items: center;">
+  <div class="navbar-brand">
+    <i class="bi bi-graph-up-arrow" style="color: #667eea; font-size: 24px;"></i>
+    FinControl
+  </div>
+  <div class="navbar-user">Ryan Siolin</div>
 </div>
 
 <div class="layout">
   <div class="sidebar">
     <ul>
-      <li><a href="3-dashboard.html">Dashboard</a></li>
-      <li><a href="4-lancamento.html">Lançamentos</a></li>
-      <li><a href="5-transacoes.html">Transações</a></li>
-      <li class="active">Relatórios</li>
-      <li><a href="7-alertas.html">Alertas</a></li>
-      <li><a href="8-educativo.html">Educação</a></li>
+      <li><a href="3-dashboard.html"><i class="bi bi-speedometer2" style="margin-right: 8px;"></i>Dashboard</a></li>
+      <li><a href="4-lancamento.html"><i class="bi bi-plus-circle" style="margin-right: 8px;"></i>Lançamentos</a></li>
+      <li><a href="5-transacoes.html"><i class="bi bi-arrow-left-right" style="margin-right: 8px;"></i>Transações</a></li>
+      <li class="active"><i class="bi bi-file-earmark-pdf" style="margin-right: 8px;"></i>Relatórios</li>
+      <li><a href="7-alertas.html"><i class="bi bi-bell" style="margin-right: 8px;"></i>Alertas</a></li>
+      <li><a href="8-educativo.html"><i class="bi bi-book" style="margin-right: 8px;"></i>Educação</a></li>
     </ul>
   </div>
   <div class="content">
 
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-      <strong>Relatórios</strong>
-      <div style="display: flex; gap: 8px;">
-        <select style="font-size: 12px; padding: 6px;"><option>Abril 2025</option></select>
-        <button class="btn outline" style="font-size: 12px;">Exportar</button>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+      <h2 style="margin: 0; font-size: 22px; font-weight: 700;">Relatórios</h2>
+      <div style="display: flex; gap: 12px; align-items: center;">
+        <select style="padding: 10px 12px; border: 1px solid #e9ecef; border-radius: 6px; font-size: 13px;"><option>Abril 2025</option></select>
+        <button class="btn btn-secondary"><i class="bi bi-download"></i> Exportar</button>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col ph" style="height: 150px; flex: 2;">Gráfico de barras — Receitas vs Despesas (6 meses)</div>
-      <div class="col ph" style="height: 150px;">Gráfico de pizza — Categorias</div>
+    <div class="charts-container">
+      <div class="box">
+        <strong style="display: block; margin-bottom: 16px;">Receitas vs Despesas (6 meses)</strong>
+        <div class="ph" style="height: 200px;">Gráfico de barras</div>
+      </div>
+      <div class="box">
+        <strong style="display: block; margin-bottom: 16px;">Categorias</strong>
+        <div class="ph" style="height: 200px;">Gráfico de pizza</div>
+      </div>
     </div>
 
     <div class="row">
       <div class="col box">
-        <div style="font-size: 12px; font-weight: bold; margin-bottom: 8px;">Resumo do Mês</div>
+        <strong style="display: block; margin-bottom: 16px;">Resumo do Mês</strong>
         <table>
-          <tr><th>Indicador</th><th>Valor</th></tr>
-          <tr><td>Total Receitas</td><td>R$ 4.850,00</td></tr>
-          <tr><td>Total Despesas</td><td>R$ 2.360,00</td></tr>
-          <tr><td>Saldo Final</td><td><strong>R$ 2.490,00</strong></td></tr>
-          <tr><td>Taxa de Poupança</td><td>51,3%</td></tr>
+          <tr><th>Indicador</th><th style="text-align: right;">Valor</th></tr>
+          <tr><td>Total Receitas</td><td style="text-align: right; color: #10b981; font-weight: 600;">R$ 4.850,00</td></tr>
+          <tr><td>Total Despesas</td><td style="text-align: right; color: #ef4444; font-weight: 600;">R$ 2.360,00</td></tr>
+          <tr><td>Saldo Final</td><td style="text-align: right; font-weight: 700;">R$ 2.490,00</td></tr>
+          <tr><td>Taxa de Poupança</td><td style="text-align: right; font-weight: 600;">51,3%</td></tr>
         </table>
       </div>
-      <div class="col ph" style="height: 160px;">Gráfico de linha — Evolução do saldo</div>
+      <div class="col box">
+        <strong style="display: block; margin-bottom: 16px;">Evolução do Saldo</strong>
+        <div class="ph" style="height: 200px;">Gráfico de linha</div>
+      </div>
     </div>
 
   </div>
