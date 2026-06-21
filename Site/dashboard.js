@@ -1,0 +1,101 @@
+// Dados e configuração dos gráficos do dashboard
+
+// Faixa Etária
+const ctx1 = document.getElementById('chartFaixaEtaria').getContext('2d');
+new Chart(ctx1, {
+  type: 'pie',
+  data: {
+    labels: ['18-24 Anos', '25-34 Anos', '35-44 Anos', '45+ Anos'],
+    datasets: [{
+      data: [59, 5, 2, 4],
+      backgroundColor: ['#667eea', '#764ba2', '#06b6d4', '#10b981'],
+      borderWidth: 0
+    }]
+  },
+  options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom' } } }
+});
+
+// Controle de Gastos
+const ctx2 = document.getElementById('chartControleGastos').getContext('2d');
+new Chart(ctx2, {
+  type: 'doughnut',
+  data: {
+    labels: ['Controla', 'Às vezes', 'Não controla'],
+    datasets: [{
+      data: [37, 17, 16],
+      backgroundColor: ['#10b981', '#f59e0b', '#ef4444'],
+      borderWidth: 0
+    }]
+  },
+  options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom' } } }
+});
+
+// Reserva de Emergência
+const ctx3 = document.getElementById('chartReservaEmergencia').getContext('2d');
+new Chart(ctx3, {
+  type: 'bar',
+  data: {
+    labels: ['Possui', 'Está construindo', 'Não possui'],
+    datasets: [{
+      label: 'Participantes',
+      data: [34, 20, 16],
+      backgroundColor: ['#10b981', '#667eea', '#64748b'],
+      borderRadius: 8
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: { y: { beginAtZero: true } }
+  }
+});
+
+// Dificuldades Financeiras
+const ctx4 = document.getElementById('chartDificuldades').getContext('2d');
+new Chart(ctx4, {
+  type: 'radar',
+  data: {
+    labels: ['Controle de gastos', 'Investimentos', 'Dívidas', 'Planejamento mensal', 'Juros compostos'],
+    datasets: [{
+      label: 'Nível de dificuldade',
+      data: [4.2, 4.8, 4.5, 4.0, 4.7],
+      borderColor: '#764ba2',
+      backgroundColor: 'rgba(118, 75, 162, 0.2)',
+      borderWidth: 2
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { position: 'bottom' } },
+    scales: { r: { beginAtZero: true, max: 5 } }
+  }
+});
+
+// Taxa Selic
+const ctx5 = document.getElementById('chartSelic').getContext('2d');
+new Chart(ctx5, {
+  type: 'line',
+  data: {
+    labels: ['1994', '1998', '2002', '2006', '2010', '2014', '2018', '2020', '2022', '2024'],
+    datasets: [{
+      label: 'Taxa Selic (% a.a.)',
+      data: [50, 25, 26, 13, 11, 12, 6.5, 2, 13.75, 14.75],
+      borderColor: '#667eea',
+      backgroundColor: 'rgba(102, 126, 234, 0.1)',
+      tension: 0.4,
+      fill: true,
+      pointRadius: 5,
+      pointBackgroundColor: '#667eea'
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { position: 'bottom' } },
+    scales: {
+      y: { beginAtZero: true, title: { display: true, text: '% ao ano' } }
+    }
+  }
+});
