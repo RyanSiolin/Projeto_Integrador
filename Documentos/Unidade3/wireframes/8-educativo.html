@@ -2,76 +2,177 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Educação – FinControl</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .navbar {
+      padding: 12px 24px;
+      border-bottom: 1px solid #e9ecef;
+    }
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .navbar-user {
+      color: #666;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .filter-buttons {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+    .filter-btn {
+      padding: 8px 16px;
+      border: 1px solid #e9ecef;
+      background: #f8f9fa;
+      border-radius: 6px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-weight: 500;
+    }
+    .filter-btn.active {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      border-color: transparent;
+    }
+    .filter-btn:hover {
+      background: #e9ecef;
+    }
+    .content-card {
+      background: #fff;
+      border: 1px solid #e9ecef;
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 16px;
+      transition: all 0.2s;
+    }
+    .content-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .card-title {
+      font-size: 13px;
+      font-weight: 600;
+      margin: 8px 0 4px 0;
+    }
+    .card-meta {
+      font-size: 11px;
+      color: #999;
+      margin-bottom: 8px;
+    }
+    .card-link {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 12px;
+    }
+    .recommended-item {
+      padding: 12px 0;
+      border-bottom: 1px solid #e9ecef;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+    }
+    .recommended-item:last-child {
+      border-bottom: none;
+    }
+    .recommended-title {
+      font-size: 13px;
+      font-weight: 500;
+      color: #333;
+    }
+    .recommended-source {
+      font-size: 12px;
+      color: #999;
+    }
+  </style>
 </head>
 <body>
 
-<div class="topbar">
-  <span>FinControl</span>
-  <span>Ryan Siolin</span>
+<div class="navbar" style="display: flex; justify-content: space-between; align-items: center;">
+  <div class="navbar-brand">
+    <i class="bi bi-graph-up-arrow" style="color: #667eea; font-size: 24px;"></i>
+    FinControl
+  </div>
+  <div class="navbar-user">Ryan Siolin</div>
 </div>
 
 <div class="layout">
   <div class="sidebar">
     <ul>
-      <li><a href="3-dashboard.html">Dashboard</a></li>
-      <li><a href="4-lancamento.html">Lançamentos</a></li>
-      <li><a href="5-transacoes.html">Transações</a></li>
-      <li><a href="6-relatorios.html">Relatórios</a></li>
-      <li><a href="7-alertas.html">Alertas</a></li>
-      <li class="active">Educação</li>
+      <li><a href="3-dashboard.html"><i class="bi bi-speedometer2" style="margin-right: 8px;"></i>Dashboard</a></li>
+      <li><a href="4-lancamento.html"><i class="bi bi-plus-circle" style="margin-right: 8px;"></i>Lançamentos</a></li>
+      <li><a href="5-transacoes.html"><i class="bi bi-arrow-left-right" style="margin-right: 8px;"></i>Transações</a></li>
+      <li><a href="6-relatorios.html"><i class="bi bi-file-earmark-pdf" style="margin-right: 8px;"></i>Relatórios</a></li>
+      <li><a href="7-alertas.html"><i class="bi bi-bell" style="margin-right: 8px;"></i>Alertas</a></li>
+      <li class="active"><i class="bi bi-book" style="margin-right: 8px;"></i>Educação</li>
     </ul>
   </div>
   <div class="content">
-    <strong style="display: block; margin-bottom: 4px;">Educação Financeira</strong>
-    <p style="font-size: 12px; color: #777; margin-bottom: 12px;">Conteúdos selecionados para apoiar seu aprendizado</p>
+    <h2 style="margin: 0 0 8px 0; font-size: 22px; font-weight: 700;">Educação Financeira</h2>
+    <p style="font-size: 13px; color: #999; margin-bottom: 24px;">Conteúdos selecionados para apoiar seu aprendizado</p>
 
     <!-- Filtros de tema -->
-    <div style="display: flex; gap: 6px; margin-bottom: 14px; flex-wrap: wrap;">
-      <button class="btn" style="font-size: 11px;">Todos</button>
-      <button class="btn ghost" style="font-size: 11px;">Poupança</button>
-      <button class="btn ghost" style="font-size: 11px;">Dívidas</button>
-      <button class="btn ghost" style="font-size: 11px;">Investimentos</button>
-      <button class="btn ghost" style="font-size: 11px;">Orçamento</button>
+    <div class="filter-buttons">
+      <button class="filter-btn active"><i class="bi bi-check"></i> Todos</button>
+      <button class="filter-btn">Poupança</button>
+      <button class="filter-btn">Dívidas</button>
+      <button class="filter-btn">Investimentos</button>
+      <button class="filter-btn">Orçamento</button>
     </div>
 
-    <!-- Cards -->
-    <div class="row" style="flex-wrap: wrap;">
-      <div class="col box" style="min-width: 180px;">
-        <div class="ph" style="height: 60px; margin-bottom: 8px;">Imagem</div>
-        <div style="font-size: 11px; color: #888;">Santander</div>
-        <div style="font-size: 13px; font-weight: bold; margin: 4px 0;">Como montar uma reserva de emergência</div>
-        <div style="font-size: 11px; color: #888; margin-bottom: 8px;">Artigo · 5 min</div>
-        Acessar →
+    <!-- Cards de conteúdo -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; margin-bottom: 24px;">
+      <div class="content-card">
+        <div class="ph" style="height: 100px; margin-bottom: 12px; border-radius: 6px;">Imagem</div>
+        <div style="font-size: 11px; color: #667eea; font-weight: 600;"><i class="bi bi-bank"></i> Santander</div>
+        <div class="card-title">Como montar uma reserva de emergência</div>
+        <div class="card-meta"><i class="bi bi-file-text"></i> Artigo · 5 min</div>
+        <a href="#" class="card-link">Acessar <i class="bi bi-arrow-right"></i></a>
       </div>
-      <div class="col box" style="min-width: 180px;">
-        <div class="ph" style="height: 60px; margin-bottom: 8px;">Imagem</div>
-        <div style="font-size: 11px; color: #888;">Caixa</div>
-        <div style="font-size: 13px; font-weight: bold; margin: 4px 0;">Guia para sair das dívidas</div>
-        <div style="font-size: 11px; color: #888; margin-bottom: 8px;">Vídeo · 12 min</div>
-        Acessar →
+      <div class="content-card">
+        <div class="ph" style="height: 100px; margin-bottom: 12px; border-radius: 6px;">Imagem</div>
+        <div style="font-size: 11px; color: #667eea; font-weight: 600;"><i class="bi bi-bank"></i> Caixa</div>
+        <div class="card-title">Guia para sair das dívidas</div>
+        <div class="card-meta"><i class="bi bi-play-circle"></i> Vídeo · 12 min</div>
+        <a href="#" class="card-link">Acessar <i class="bi bi-arrow-right"></i></a>
       </div>
-      <div class="col box" style="min-width: 180px;">
-        <div class="ph" style="height: 60px; margin-bottom: 8px;">Imagem</div>
-        <div style="font-size: 11px; color: #888;">Nubank</div>
-        <div style="font-size: 13px; font-weight: bold; margin: 4px 0;">Regra 50-30-20</div>
-        <div style="font-size: 11px; color: #888; margin-bottom: 8px;">Artigo · 4 min</div>
-        Acessar →
+      <div class="content-card">
+        <div class="ph" style="height: 100px; margin-bottom: 12px; border-radius: 6px;">Imagem</div>
+        <div style="font-size: 11px; color: #667eea; font-weight: 600;"><i class="bi bi-bank"></i> Nubank</div>
+        <div class="card-title">Regra 50-30-20</div>
+        <div class="card-meta"><i class="bi bi-file-text"></i> Artigo · 4 min</div>
+        <a href="#" class="card-link">Acessar <i class="bi bi-arrow-right"></i></a>
       </div>
     </div>
 
     <!-- Recomendado -->
-    <!-- href's ainda não decididos -->
-    <div class="box" style="margin-top: 0;">
-      <div style="font-size: 12px; font-weight: bold; margin-bottom: 8px;">Recomendado para o seu perfil</div>
-      <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee; font-size: 13px;">
-        <span>Como definir metas financeiras realistas <span style="font-size: 11px; color: #888;">— Banco do Brasil</span></span>
-        <a href="#" style="font-size: 12px;">Ver →</a>
+    <div class="box">
+      <strong style="display: block; margin-bottom: 16px;">Recomendado para o seu perfil</strong>
+      <div class="recommended-item">
+        <div>
+          <div class="recommended-title">Como definir metas financeiras realistas</div>
+          <div class="recommended-source">Banco do Brasil</div>
+        </div>
+        <a href="#" class="card-link">Ver</a>
       </div>
-      <div style="display: flex; justify-content: space-between; padding: 8px 0; font-size: 13px;">
-        <span>Primeiros passos para investir com pouco <span style="font-size: 11px; color: #888;">— XP Educação</span></span>
-        <a href="#" style="font-size: 12px;">Ver →</a>
+      <div class="recommended-item">
+        <div>
+          <div class="recommended-title">Primeiros passos para investir com pouco</div>
+          <div class="recommended-source">XP Educação</div>
+        </div>
+        <a href="#" class="card-link">Ver</a>
       </div>
     </div>
   </div>
