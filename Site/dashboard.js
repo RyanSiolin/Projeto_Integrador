@@ -99,3 +99,75 @@ new Chart(ctx5, {
     }
   }
 });
+
+// Situação Profissional
+const ctx6 = document.getElementById('chartSituacaoProfissional').getContext('2d');
+new Chart(ctx6, {
+  type: 'bar',
+  data: {
+    labels: ['Estudante', 'Estagiário', 'Autônomo', 'Empregado CLT', 'Desempregado', 'Empresário', 'Militar'],
+    datasets: [{
+      label: 'Participantes',
+      data: [38, 15, 7, 6, 2, 1, 1],
+      backgroundColor: ['#667eea', '#764ba2', '#06b6d4', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6'],
+      borderRadius: 8
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: { y: { beginAtZero: true } }
+  }
+});
+
+// Tipos de Investimentos
+const ctx7 = document.getElementById('chartTiposInvestimentos').getContext('2d');
+new Chart(ctx7, {
+  type: 'doughnut',
+  data: {
+    labels: ['Renda Fixa (CDB/Tesouro/LCI)', 'Ações', 'Criptomoedas', 'Poupança', 'Imóveis', 'Outros'],
+    datasets: [{
+      data: [20, 8, 5, 4, 2, 2],
+      backgroundColor: ['#10b981', '#667eea', '#f59e0b', '#06b6d4', '#ef4444', '#8b5cf6'],
+      borderWidth: 0
+    }]
+  },
+  options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom' } } }
+});
+
+// Formato de Aprendizado Preferido
+const ctx8 = document.getElementById('chartFormatoAprendizado').getContext('2d');
+new Chart(ctx8, {
+  type: 'pie',
+  data: {
+    labels: ['Vídeos', 'Aplicativos', 'Cursos Online', 'Redes Sociais', 'Artigos'],
+    datasets: [{
+      data: [55, 40, 25, 20, 10],
+      backgroundColor: ['#667eea', '#764ba2', '#10b981', '#f59e0b', '#06b6d4'],
+      borderWidth: 0
+    }]
+  },
+  options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom' } } }
+});
+
+// Nota de Educação Financeira
+const ctx9 = document.getElementById('chartNotaEducacao').getContext('2d');
+new Chart(ctx9, {
+  type: 'bar',
+  data: {
+    labels: ['Nota 1', 'Nota 2', 'Nota 3', 'Nota 4', 'Nota 5'],
+    datasets: [{
+      label: 'Participantes',
+      data: [3, 12, 27, 24, 1],
+      backgroundColor: ['#ef4444', '#f59e0b', '#667eea', '#10b981', '#06b6d4'],
+      borderRadius: 8
+    }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: { y: { beginAtZero: true } }
+  }
+});
