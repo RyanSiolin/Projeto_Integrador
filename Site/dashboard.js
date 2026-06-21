@@ -1,5 +1,12 @@
 // Dados e configuração dos gráficos do dashboard
 
+// Cores dos rótulos conforme o tema (claro/escuro) — evita texto cinza ilegível no modo escuro
+(function () {
+  const dark = document.documentElement.getAttribute('data-bs-theme') === 'dark';
+  Chart.defaults.color = dark ? '#f1f5f9' : '#475569';
+  Chart.defaults.borderColor = dark ? 'rgba(148,163,184,.25)' : 'rgba(0,0,0,.08)';
+})();
+
 // Faixa Etária
 const ctx1 = document.getElementById('chartFaixaEtaria').getContext('2d');
 new Chart(ctx1, {
@@ -8,7 +15,7 @@ new Chart(ctx1, {
     labels: ['18-24 Anos', '25-34 Anos', '35-44 Anos', '45+ Anos'],
     datasets: [{
       data: [59, 5, 2, 4],
-      backgroundColor: ['#667eea', '#764ba2', '#06b6d4', '#10b981'],
+      backgroundColor: ['#0f766e', '#334155', '#06b6d4', '#10b981'],
       borderWidth: 0
     }]
   },
@@ -39,7 +46,7 @@ new Chart(ctx3, {
     datasets: [{
       label: 'Participantes',
       data: [34, 20, 16],
-      backgroundColor: ['#10b981', '#667eea', '#64748b'],
+      backgroundColor: ['#10b981', '#0f766e', '#64748b'],
       borderRadius: 8
     }]
   },
@@ -60,7 +67,7 @@ new Chart(ctx4, {
     datasets: [{
       label: 'Nível de dificuldade',
       data: [4.2, 4.8, 4.5, 4.0, 4.7],
-      borderColor: '#764ba2',
+      borderColor: '#334155',
       backgroundColor: 'rgba(118, 75, 162, 0.2)',
       borderWidth: 2
     }]
@@ -82,12 +89,12 @@ new Chart(ctx5, {
     datasets: [{
       label: 'Taxa Selic (% a.a.)',
       data: [50, 25, 26, 13, 11, 12, 6.5, 2, 13.75, 14.75],
-      borderColor: '#667eea',
-      backgroundColor: 'rgba(102, 126, 234, 0.1)',
+      borderColor: '#0f766e',
+      backgroundColor: 'rgba(15,118,110,0.12)',
       tension: 0.4,
       fill: true,
       pointRadius: 5,
-      pointBackgroundColor: '#667eea'
+      pointBackgroundColor: '#0f766e'
     }]
   },
   options: {
@@ -109,7 +116,7 @@ new Chart(ctx6, {
     datasets: [{
       label: 'Participantes',
       data: [38, 15, 7, 6, 2, 1, 1],
-      backgroundColor: ['#667eea', '#764ba2', '#06b6d4', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6'],
+      backgroundColor: ['#0f766e', '#334155', '#06b6d4', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6'],
       borderRadius: 8
     }]
   },
@@ -129,7 +136,7 @@ new Chart(ctx7, {
     labels: ['Renda Fixa (CDB/Tesouro/LCI)', 'Ações', 'Criptomoedas', 'Poupança', 'Imóveis', 'Outros'],
     datasets: [{
       data: [20, 8, 5, 4, 2, 2],
-      backgroundColor: ['#10b981', '#667eea', '#f59e0b', '#06b6d4', '#ef4444', '#8b5cf6'],
+      backgroundColor: ['#10b981', '#0f766e', '#f59e0b', '#06b6d4', '#ef4444', '#8b5cf6'],
       borderWidth: 0
     }]
   },
@@ -144,7 +151,7 @@ new Chart(ctx8, {
     labels: ['Vídeos', 'Aplicativos', 'Cursos Online', 'Redes Sociais', 'Artigos'],
     datasets: [{
       data: [55, 40, 25, 20, 10],
-      backgroundColor: ['#667eea', '#764ba2', '#10b981', '#f59e0b', '#06b6d4'],
+      backgroundColor: ['#0f766e', '#334155', '#10b981', '#f59e0b', '#06b6d4'],
       borderWidth: 0
     }]
   },
@@ -160,7 +167,7 @@ new Chart(ctx9, {
     datasets: [{
       label: 'Participantes',
       data: [3, 12, 27, 24, 1],
-      backgroundColor: ['#ef4444', '#f59e0b', '#667eea', '#10b981', '#06b6d4'],
+      backgroundColor: ['#ef4444', '#f59e0b', '#0f766e', '#10b981', '#06b6d4'],
       borderRadius: 8
     }]
   },
