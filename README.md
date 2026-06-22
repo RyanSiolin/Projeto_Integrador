@@ -4,6 +4,7 @@
 
 * **Disciplina:** Projeto Integrador I
 * **Instituição:** UniCEUB
+* **Link para o Dashboard:** https://ryansiolin.github.io/Projeto_Integrador/
 
 ## 📊 Visão Geral do Projeto
 Este projeto consiste no desenvolvimento de um **dashboard de controle financeiro pessoal** disponibilizado em ambiente desktop ou web. O sistema permite que o usuário registre e categorize suas receitas e despesas de forma manual, transformando esses dados em indicadores visuais, como gráficos de pizza e barras. O objetivo principal é auxiliar na identificação de padrões de consumo e apoiar a tomada de decisões financeiras conscientes. Além das ferramentas de monitoramento, o projeto integra sugestões de conteúdos educativos externos para apoiar o aprendizado contínuo.
